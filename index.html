@@ -21,23 +21,22 @@
                 <button class="sign-up-btn">Iniciar Sesion</button>
             </div>
         </div>
-        <form class="formulario" action="menuPrincipal.html">
+        <form class="formulario">
             <h2 class="create-account">Crear una cuenta</h2>
             <i class="fa-regular fa-user fa-5x"></i>
-            <input type="text" placeholder="Nombre">
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Contraseña">
-            <a href="menuPrincipal.html"class="button">Registrarse</a>
-
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Contraseña" required>
+            <button id="register-btn" class="button">Registrarse</button>
         </form>
     </div>
     <div class="container-form sign-in">
         <form class="formulario">
             <h2 class="create-account">Iniciar Sesion</h2>
             <i class="fa-regular fa-user fa-5x"></i>
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Contraseña">
-            <a href="menuPrincipal.html"class="button">Iniciar Sesión</a>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Contraseña" required>
+            <a href="menuPrincipal.html" class="button">Iniciar Sesión</a>
         </form>
         <div class="welcome-back">
             <div class="message">
@@ -47,6 +46,13 @@
             </div>
         </div>
     </div>
+    <div id="confirmation-modal" class="modal hidden">
+        <div class="modal-content">
+            <p>¡Cuenta creada exitosamente!</p>
+            <button id="confirm-btn" class="button">Continuar</button>
+        </div>
+    </div>
+    
     <script src="scripts/login.js"></script>
 </body>
 </html>
