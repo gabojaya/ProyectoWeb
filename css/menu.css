@@ -17,13 +17,26 @@ body {
   color: #fff;
 }
 
-.formulario {
-  width: 100%;
-  height: 80%;
-
-  background-color: rgb(51, 51, 51, 0.85);
-  
+.page {
+  display: none; /* Ocultar todo por defecto */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(51, 51, 51, 0.8);
+  color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+/* Estilo para la sección activa visible */
+.page[data-page="1"],
+.page[data-page="2"],
+.page[data-page="3"] {
+  display: flex; /* Solo mostrar las activas */
+}
+
+
 
 .create-account {
   padding: 1rem 3rem;
@@ -45,9 +58,7 @@ h2.create-account {
   justify-content: space-around;
   margin: auto;
 }
-.icono{
-  padding: 40px 0px 0px 4rem;
-}
+
 
 .border-icon {
   height: 20px;
@@ -119,40 +130,18 @@ h2.create-account {
   background-color: #6464f8;
 }
 
-.page {
-  flex-direction: column;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
-  
-}
-
-.page input {
-  width: 70%;
-  display: block;
-  margin: auto;
-
-  background-color: transparent;
-  border: none;
-  border-bottom: white thin solid;
-  text-align: center;
-  outline: none;
-  padding: .2rem 0;
-  font-size: .9rem;
-  color: white;
-}
 
 
-
-
+/* Seccion 1*/
 .perfil {
-    margin: 4rem 0rem;
-    display: flex;
-    gap: 7rem; /* Espaciado entre los bloques */
-    align-items: center; /* Alinear verticalmente */
+  margin: 4rem 0rem;
+  display: flex;
+  flex-wrap: wrap; /* Permitir que los elementos se ajusten mejor en pantallas pequeñas */
+  gap: 2rem;
+  align-items: flex-start;
 }
 
-.user-info {
-    
+.user-info {    
     font-size: 1.7rem;
 }
 
@@ -163,49 +152,44 @@ h2.create-account {
 }
 
 .input-group label {
-    width: 20%; /* Ancho fijo para etiquetas */
-
+    width: 100%; /* Ancho fijo para etiquetas */
     margin-right: 1rem; /* Espacio entre el texto y el input */
 }
 
+
 .input-group input {
-  
-    padding: 10px;
-    width: 800px;
-    font-size: 1rem;
-    border-radius: 20px;
-    border: 1px solid #ccc; /* Borde sutil */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 40vw; /* Garantiza que el input no se salga */
 }
 
-.botones-perfil{
+.botones-perfil {
   display: flex;
   justify-content: center;
-  gap: 400px
+  gap: 2rem;
+  flex-wrap: wrap; /* Permite que los botones se ajusten si el tamaño de pantalla es pequeño */
 }
-.button-user{
-  
+.button-user {
   text-decoration: none;
-  
-  margin: 0;
   border: solid thin white;
-  padding: 15px;
+  padding: 0.7rem 1.2rem;
   border-radius: 2rem;
   background-color: white;
   font-weight: 600;
-  font-size: .8rem;
+  font-size: 0.9rem;
   cursor: pointer;
   color: #222;
   transition: transform 1s ease;
-  text-align: center;
-  
 }
 
 .button-user:hover {
   background-color: #999999;
   transform: scale(1.15);
 }
-
+/* Seccion 2*/
 .lista-Metas{
   
   width: 90%;
@@ -213,4 +197,39 @@ h2.create-account {
   background-color: #fff;
   margin-bottom: 1rem;
   justify-items: center;
+}
+
+.tabla-metas {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+.tabla-metas th,
+.tabla-metas td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.tabla-metas th {
+  background-color: #333;
+  color: white;
+}
+
+.tabla-metas tr:hover {
+  background-color: #f2f2f2;
+}
+
+.botones-perfil a {
+  margin: 0 5px;
+  text-decoration: none;
+  padding: 8px 12px;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 5px;
+}
+
+.botones-perfil a:hover {
+  background-color: #0056b3;
 }

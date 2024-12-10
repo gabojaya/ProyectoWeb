@@ -12,24 +12,22 @@
     <div class="container-form">
         <!-- Barra de navegación con los nombres de las páginas -->
         <div class="tabs">
-            <span class="tab" onclick="showPage(1)">Perfil</span>
-            <span class="tab" onclick="showPage(2)">Metas</span>
-            <span class="tab" onclick="showPage(3)">Ejecución</span>
-            <span class="tab" onclick="showPage(4)">Estadisticas</span>
-            <span class="tab" onclick="showPage(4)">Notificaciones</span>
+            <span class="tab" data-page="1">Perfil</span>
+            <span class="tab" data-page="2">Metas</span>
+            <span class="tab" data-page="3">Ejecución</span>
+            <span class="tab" data-page="4">Estadísticas</span>
+            <span class="tab" data-page="5">Notificaciones</span>
         </div>
         
         <div class="formulario">
             <!-- Sección 1 -->
             <div class="page" id="page1">
                 <div class="perfil">
-                    <div >
+                    <div>
                         <i class="fa-regular fa-user fa-5x icono"></i>
                         <h2 class="create-account">Usuario</h2>
-
-                </div>
-                <div class="user-info">
-                    
+                    </div>
+                    <div class="user-info">
                         <div class="input-group">
                             <label for="nombre">Nombre</label>
                             <input type="text" id="nombre" placeholder="Nombre">
@@ -46,72 +44,99 @@
                             <label for="fecha">Fecha de inicio</label>
                             <input type="text" id="fecha" placeholder="Fecha de inicio">
                         </div>
-        
+                    </div>
+                </div>
+                <div class="botones-perfil">
+                    <a href="#" class="button-user">Editar perfil</a>
+                    <a href="index.html" class="button-user">Eliminar perfil</a>
                 </div>
             </div>
-            <div class="botones-perfil">
-                <a href=""class="button-user">Editar perfil</a>
-                <a href="index.html"class="button-user">Eliminar perfil</a>
-            </div>
-             </div>
 
             <!-- Sección 2 -->
-            <div class="page" id="page2" >
-                <h2 class="create-account">Meta registradas</h2>
-
+            <div class="page" id="page2" style="display:none;">
+                <h2 class="create-account">Metas Registradas</h2>
                 <div class="lista-Metas">
-                    
-
-
+                    <!-- Tabla para mostrar las metas con datos estáticos -->
+                    <table class="tabla-metas">
+                        <thead>
+                            <tr>
+                                <th>Número</th>
+                                <th>Descripción</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Datos estáticos "quemados" en el HTML -->
+                            <tr>
+                                <td>1</td>
+                                <td>Ejercicio diario</td>
+                                <td>
+                                    <button class="editar-habito">Editar hábitos</button>
+                                    <button class="eliminar-meta">Eliminar meta</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Meditar por las mañanas</td>
+                                <td>
+                                    <button class="editar-habito">Editar hábitos</button>
+                                    <button class="eliminar-meta">Eliminar meta</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Leer 20 minutos al día</td>
+                                <td>
+                                    <button class="editar-habito">Editar hábitos</button>
+                                    <button class="eliminar-meta">Eliminar meta</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Practicar guitarra todas las noches</td>
+                                <td>
+                                    <button class="editar-habito">Editar hábitos</button>
+                                    <button class="eliminar-meta">Eliminar meta</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Escribir diario</td>
+                                <td>
+                                    <button class="editar-habito">Editar hábitos</button>
+                                    <button class="eliminar-meta">Eliminar meta</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
                 <div class="botones-perfil">
-                    <a href=""class="button-user">Agregar meta</a>
-                </div>
-                
-
-
-
-            </div>
-
-            <!-- Sección 3 -->
-            <div class="page" id="page3" style="display:none;">
-                <h2 class="create-account">Registrar ejecución</h2>
-
-                <div class="lista-Metas">
-                    
-
-
-                </div>
-                <div class="botones-perfil">
-                    <a href=""class="button-user">Agregar meta</a>
-                </div>
-            </div>
-            <!-- Sección 3 -->
-            <div class="page" id="page4" style="display:none;">
-                <h2 class="create-account">Estadisticas</h2>
-                <div class="lista-Metas">
-                    
-
-
-                </div>
-                <div class="botones-perfil">
-                    <a href=""class="button-user">Agregar meta</a>
-                </div>
-            </div>
-
-            <!-- Sección 3 -->
-            <div class="page" id="page4" style="display:none;">
-                <h2 class="create-account">Notificaciones</h2>
-                <div class="lista-Metas">
-                    
-
-
-                </div>
-                <div class="botones-perfil">
-                    <a href=""class="button-user">Agregar meta</a>
+                    <a href="#" class="button-user">Agregar meta</a>
                 </div>
             </div>
             
+            
+
+            <!-- Sección 3 -->
+            <div class="page" id="page3" style="display:none;">
+                <h2 class="create-account">Registrar Ejecución</h2>
+                <div class="lista-Metas"></div>
+                <div class="botones-perfil">
+                    <a href="#" class="button-user">Agregar Ejecución</a>
+                </div>
+            </div>
+
+            <!-- Sección 4 -->
+            <div class="page" id="page4" style="display:none;">
+                <h2 class="create-account">Estadísticas</h2>
+                <div class="lista-Metas"></div>
+            </div>
+
+            <!-- Sección 5 -->
+            <div class="page" id="page5" style="display:none;">
+                <h2 class="create-account">Notificaciones</h2>
+                <div class="lista-Metas"></div>
+            </div>
         </div>
     </div>
 
