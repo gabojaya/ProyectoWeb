@@ -18,7 +18,7 @@ body {
 }
 
 .page {
-  display: none; /* Ocultar todo por defecto */
+  display: none; 
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -29,11 +29,11 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilo para la sección activa visible */
+
 .page[data-page="1"],
 .page[data-page="2"],
 .page[data-page="3"] {
-  display: flex; /* Solo mostrar las activas */
+  display: flex; 
 }
 
 
@@ -136,7 +136,7 @@ h2.create-account {
 .perfil {
   margin: 4rem 0rem;
   display: flex;
-  flex-wrap: wrap; /* Permitir que los elementos se ajusten mejor en pantallas pequeñas */
+  flex-wrap: wrap;
   gap: 2rem;
   align-items: flex-start;
 }
@@ -147,13 +147,13 @@ h2.create-account {
 
 .input-group {
     display: flex;
-    align-items: center; /* Alinear los elementos verticalmente */
-    margin-bottom: 1rem; /* Espaciado entre filas */
+    align-items: center; 
+    margin-bottom: 1rem;
 }
 
 .input-group label {
-    width: 100%; /* Ancho fijo para etiquetas */
-    margin-right: 1rem; /* Espacio entre el texto y el input */
+    width: 100%; 
+    margin-right: 1rem;
 }
 
 
@@ -163,14 +163,14 @@ h2.create-account {
   border-radius: 20px;
   border: 1px solid #ccc;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 40vw; /* Garantiza que el input no se salga */
+  width: 40vw; 
 }
 
 .botones-perfil {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  flex-wrap: wrap; /* Permite que los botones se ajusten si el tamaño de pantalla es pequeño */
+  flex-wrap: wrap; 
 }
 .button-user {
   text-decoration: none;
@@ -244,12 +244,12 @@ h2.create-account {
   position: fixed;
   top: 0;
   left: 0;
-  height: 110vh; /* Asegura que la pantalla completa se cubra */
+  height: 110vh; 
   width: 100vw;
   display: flex;
-  justify-content: center; /* Centrado horizontal */
-  align-items: center; /* Centrado vertical */
-  z-index: 1000; /* Asegura que esté sobre otros elementos */
+  justify-content: center; 
+  align-items: center; 
+  z-index: 1000;
 }
 .container-form-2 {
   background: rgb(255, 255, 255);
@@ -266,7 +266,7 @@ h2.create-account {
   justify-content: center;
   margin-top: 10%;
   gap: 7rem;
-  flex-wrap: wrap; /* Permite que los botones se ajusten si el tamaño de pantalla es pequeño */
+  flex-wrap: wrap; 
 }
 
 .tabla-habitos {
@@ -313,18 +313,18 @@ h2.create-account {
 .input-group select {
   padding: 10px;
   font-size: 1rem;
-  border-radius: 20px; /* Bordes redondeados */
-  border: 1px solid #ccc; /* Color del borde */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-  width: 40vw; /* Ajuste al tamaño de los inputs */
-  background-color: #fff; /* Fondo blanco */
-  cursor: pointer; /* Cambiar el cursor al pasar sobre el elemento */
+  border-radius: 20px; 
+  border: 1px solid #ccc; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  width: 40vw; 
+  background-color: #fff;
+  cursor: pointer; 
 }
 
 .input-group select:focus {
-  border-color: #007BFF; /* Color del borde al enfocar */
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Resaltar la sombra */
-  outline: none; /* Eliminar el borde predeterminado */
+  border-color: #007BFF; 
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+  outline: none; 
 }
 
 .registrar-ejecucion{

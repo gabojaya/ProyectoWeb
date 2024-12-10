@@ -245,7 +245,8 @@
                                 <td>Diario</td>
                                 <td>En progreso</td>
                                 <td>
-                                    <button class="registrar-ejecucion" id="registrar-ejecucion">Registrar Ejecucion</button>
+                                    <button class="registrar-ejecucion" id="registrar-ejecucion">Registrar
+                                        Ejecucion</button>
                                 </td>
                             </tr>
                             <tr>
@@ -255,7 +256,8 @@
                                 <td>Semanal</td>
                                 <td>En progreso</td>
                                 <td>
-                                    <button class="registrar-ejecucion" id="registrar-ejecucion">Registrar Ejecucion</button>
+                                    <button class="registrar-ejecucion" id="registrar-ejecucion">Registrar
+                                        Ejecucion</button>
                                 </td>
                             </tr>
                         </tbody>
@@ -263,27 +265,22 @@
                 </div>
             </div>
         </div>
-
+        <!-- Pantalla Oculta Registrar Ejecución -->
         <div class="screenOverlay" id="screenOverlayEjecucion" style="display:none;">
             <div class="container-form-2">
                 <h3>Registrar Ejecución del Hábito</h3>
-        
-                <!-- Párrafo para mostrar el nombre del hábito -->
+
                 <p><strong>Nombre del Hábito:</strong> <span id="nombreHabitoTexto">Beber agua</span></p>
-        
-                <!-- Párrafo para mostrar la fecha actual -->
+
                 <p><strong>Fecha Actual:</strong> <span id="fechaActualTexto">--/--/----</span></p>
-        
-                <!-- Párrafo para mostrar el tiempo transcurrido -->
+
                 <p><strong>Tiempo Transcurrido:</strong> <span id="tiempoTranscurrido">00:00</span></p>
-        
-                <!-- Botones de control para iniciar y pausar -->
+
                 <div class="botones-control">
                     <button class="button-user" id="iniciar-temporizador">Iniciar</button>
                     <button class="button-user" id="pausar-temporizador" disabled>Pausar</button>
                 </div>
-        
-                <!-- Botones de guardar y cancelar -->
+
                 <div class="botones-meta">
                     <button class="button-user" id="guardar-ejecucion-btn">Guardar Hábito</button>
                     <button class="button-user" id="cerrar-ejecucion-btn">Cancelar</button>
@@ -291,9 +288,7 @@
             </div>
         </div>
 
-
-
-        <!-- Sección 4 -->
+        <!-- Sección 4: Estadisticas-->
         <div class="page" id="page4" style="display:none;">
             <h2 class="create-account">Estadísticas</h2>
             <div class="lista-Metas" style="display: flex;">
@@ -327,7 +322,7 @@
             </div>
         </div>
 
-        <!-- Sección 5 -->
+        <!-- Sección 5: Notificaciones-->
         <div class="page" id="page5" style="display:none;">
             <h2 class="create-account">Notificaciones</h2>
             <div class="lista-Metas">
@@ -385,15 +380,15 @@
         const tiempoTranscurrido = document.getElementById('tiempoTranscurrido');
         const iniciarBtn = document.getElementById('iniciar-temporizador');
         const pausarBtn = document.getElementById('pausar-temporizador');
-    
+
         // Configurar la fecha actual
         const fechaActual = new Date();
         fechaActualTexto.textContent = fechaActual.toLocaleDateString();
-    
+
         // Variables para el temporizador
         let intervalo;
         let tiempoEnSegundos = 0;
-    
+
         // Función para iniciar el temporizador
         iniciarBtn.addEventListener('click', () => {
             if (!intervalo) {
@@ -407,7 +402,7 @@
                 pausarBtn.disabled = false;
             }
         });
-    
+
         // Función para pausar el temporizador
         pausarBtn.addEventListener('click', () => {
             clearInterval(intervalo);
@@ -415,7 +410,7 @@
             iniciarBtn.disabled = false;
             pausarBtn.disabled = true;
         });
-    
+
         // Función para cerrar el modal (opcional, puedes adaptarla según tu lógica)
         const cerrarBtn = document.getElementById('cerrar-ejecucion-btn');
         cerrarBtn.addEventListener('click', () => {
