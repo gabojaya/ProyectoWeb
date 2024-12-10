@@ -174,7 +174,7 @@ h2.create-account {
 }
 .button-user {
   text-decoration: none;
-  border: solid thin white;
+  border: solid thin rgb(0, 0, 0);
   padding: 0.7rem 1.2rem;
   border-radius: 2rem;
   background-color: white;
@@ -203,6 +203,7 @@ h2.create-account {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 1rem;
+  color: rgb(0, 0, 0);
 }
 
 .tabla-metas th,
@@ -214,22 +215,27 @@ h2.create-account {
 
 .tabla-metas th {
   background-color: #333;
-  color: white;
+  color: #ffffff;
 }
 
 .tabla-metas tr:hover {
   background-color: #f2f2f2;
 }
 
-.botones-perfil a {
-  margin: 0 5px;
+.editar-meta , .eliminar-meta{
   text-decoration: none;
-  padding: 8px 12px;
-  color: #fff;
-  background-color: #007bff;
-  border-radius: 5px;
+  border: solid thin rgb(0, 0, 0);
+  padding: 0.4rem 2rem;
+  margin: 0rem 1rem;
+  border-radius: 2rem;
+  background-color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  color: #222;
+  transition: transform 1s ease;
 }
-
-.botones-perfil a:hover {
-  background-color: #0056b3;
+.editar-meta:hover , .eliminar-meta:hover{
+  background-color: #999999;
+  transform: scale(1.15);
 }
