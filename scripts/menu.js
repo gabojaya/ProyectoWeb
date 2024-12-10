@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     showPage(1); // Mostrar la primera página al cargar la página
     setupTabs(); // Configurar eventos para las pestañas
     setupMetaScreen();
@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function setupTabs() {
     const tabs = document.querySelectorAll('.tab');
     tabs.forEach(tab => {
-        tab.addEventListener('click', function() {
+        tab.addEventListener('click', function () {
             const pageNumber = parseInt(tab.dataset.page); // Obtiene el número de la pestaña
             showPage(pageNumber);
         });
@@ -17,7 +17,7 @@ function setupTabs() {
 function showPage(pageNumber) {
     // Ocultar todas las secciones
     const pages = document.querySelectorAll('.page');
-    pages.forEach(function(page) {
+    pages.forEach(function (page) {
         page.style.display = 'none';
     });
 
@@ -44,31 +44,31 @@ function setupMetaScreen() {
     const cerrarHabitoBtn = document.getElementById('cerrar-habito-btn');
     const volverAMetasBtn = document.getElementById('volver-a-metas-btn');
 
-    
+
 
     // Funcionalidad para mostrar la pantalla modal al hacer clic en "Agregar Meta"
-    addMetaBtn.addEventListener('click', function() {
+    addMetaBtn.addEventListener('click', function () {
         screenOverlay.style.display = 'flex'; // Mostrar la pantalla modal
     });
 
     // Funcionalidad para ocultar la pantalla modal al hacer clic en "Cancelar"
-    cerrarBtn.addEventListener('click', function() {
+    cerrarBtn.addEventListener('click', function () {
         screenOverlay.style.display = 'none'; // Ocultar la pantalla modal
     });
 
     // Funcionalidad para manejar los botones de "Editar Meta"
-    editarMetaBtns.forEach(function(btn) {
-        btn.addEventListener('click', function() {
+    editarMetaBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
             screenOverlay.style.display = 'flex'; // Mostrar la pantalla modal
             // Opcional: Aquí puedes agregar lógica para cargar datos dinámicos
         });
     });
 
-    continuarBtn.addEventListener('click', function() {
+    continuarBtn.addEventListener('click', function () {
         screenOverlayHabitos.style.display = 'flex'; // Mostrar la pantalla modal
     });
 
-    addHabitoBtn.addEventListener('click', function() {
+    addHabitoBtn.addEventListener('click', function () {
         screenOverlayRegistroHabitos.style.display = 'flex'; // Mostrar la pantalla modal
     });
 
@@ -78,7 +78,7 @@ function setupMetaScreen() {
 
 
     });
-    
+
     cerrarHabitoBtn.addEventListener('click', function () {
         // Ocultar el modal de registro de hábitos
         screenOverlayRegistroHabitos.style.display = 'none';
@@ -90,10 +90,10 @@ function setupMetaScreen() {
         screenOverlayHabitos.style.display = 'none';
         screenOverlay.style.display = 'none';
     });
-    
 
-    editarHabitoBtn.forEach(function(btn) {
-        btn.addEventListener('click', function() {
+
+    editarHabitoBtn.forEach(function (btn) {
+        btn.addEventListener('click', function () {
             screenOverlayRegistroHabitos.style.display = 'flex'; // Mostrar la pantalla modal
             // Opcional: Aquí puedes agregar lógica para cargar datos dinámicos
         });
@@ -101,7 +101,26 @@ function setupMetaScreen() {
 
 
 
-    
+    /* Seccion 3: Registrar Ejecucion*/
+    const registrarEjecucionBtn = document.querySelectorAll('.registrar-ejecucion');
+    const cerrarEjecucionBtn = document.getElementById('cerrar-ejecucion-btn');
+    const screenOverlayEjecucion = document.getElementById('screenOverlayEjecucion');
+
+
+    // Funcionalidad para mostrar la pantalla modal al hacer clic en "Agregar Meta"
+    registrarEjecucionBtn.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            screenOverlayEjecucion.style.display = 'flex'; // Mostrar la pantalla modal
+            // Opcional: Aquí puedes agregar lógica para cargar datos dinámicos
+        });
+    });
+
+    // Funcionalidad para ocultar la pantalla modal al hacer clic en "Cancelar"
+    cerrarEjecucionBtn.addEventListener('click', function () {
+        screenOverlayEjecucion.style.display = 'none'; // Ocultar la pantalla modal
+    });
+
+
 
 
 
