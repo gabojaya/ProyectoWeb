@@ -1,11 +1,13 @@
+//selecciona el cambas
 const ctx = document.getElementById('myChart');
+//se crean los datos para el grafico
 const data = {
-    labels: ['Comer','Tomar agua','Dormir','Jugar','Trabajr','Gym','Correr'],
+    labels: ['Comer','Tomar agua','Dormir','Jugar','Trabajr','Gym','Correr'],//aquie se cargaran los habitos de la meta
     datasets: [{
         label:'prueba',
-        data: [65, 59, 90, 81, 56, 55, 40],
+        data: [65, 59, 90, 81, 56, 55, 40],//aqui las ejecuciones para el grafico
         fill: true,
-        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+        backgroundColor: 'rgba(255, 99, 132, 0.2)',//estilo del grafico
         borderColor: 'rgb(255, 99, 132)',
         pointBackgroundColor: 'rgb(255, 99, 132)',
         pointBorderColor: '#fff',
@@ -22,4 +24,4 @@ const config = {
         }
     },
 };
-new Chart(ctx,config);
+new Chart(ctx,config);//se crea el grafico en el canvas indicado
