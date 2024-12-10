@@ -8,6 +8,7 @@
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/menu.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
 </head>
 
 <body>
@@ -132,7 +133,8 @@
             <!-- Sección 3 -->
             <div class="page" id="page3" style="display:none;">
                 <h2 class="create-account">Registrar Ejecución</h2>
-                <div class="lista-Metas"></div>
+                <div class="lista-Metas">
+                </div>
                 <div class="botones-perfil">
                     <a href="#" class="button-user">Agregar Ejecución</a>
                 </div>
@@ -141,7 +143,35 @@
             <!-- Sección 4 -->
             <div class="page" id="page4" style="display:none;">
                 <h2 class="create-account">Estadísticas</h2>
-                <div class="lista-Metas"></div>
+                <div class="lista-Metas" style="display: flex;">
+                    <div class="Metas" style="width: 50%;">
+                        <table class="tabla-metas">
+                            <thead>
+                                <tr>
+                                    <th>Meta</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="color: black;">Actividades diarias</td>
+                                </tr>
+                                <tr>
+                                    <td style="color: black;">Meta de ejercicio</td>
+                                </tr>
+                                <tr>
+                                    <td style="color: black;">Meta de ejercicio intenso</td>
+                                </tr>
+                                <tr>
+                                    <td style="color: black;">Trabajo intenso</td>
+                                </tr>
+                                <tr>
+                                    <td style="color: black;">Meta de oscio</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <canvas id="myChart" style="width: 50%;"></canvas>
+                </div>
             </div>
 
             <!-- Sección 5 -->
@@ -153,6 +183,8 @@
     </div>
 
     <script src="scripts/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+    <script src="scripts/radar.js"></script>
 </body>
 
 </html>
