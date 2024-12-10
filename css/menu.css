@@ -269,8 +269,6 @@ h2.create-account {
   flex-wrap: wrap; /* Permite que los botones se ajusten si el tamaño de pantalla es pequeño */
 }
 
-
-
 .tabla-habitos {
   width: 100%;
   border-collapse: collapse;
@@ -327,4 +325,22 @@ h2.create-account {
   border-color: #007BFF; /* Color del borde al enfocar */
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Resaltar la sombra */
   outline: none; /* Eliminar el borde predeterminado */
+}
+
+.registrar-ejecucion{
+  text-decoration: none;
+  border: solid thin rgb(0, 0, 0);
+  padding: 0.4rem 2rem;
+  margin: 0rem 1rem;
+  border-radius: 2rem;
+  background-color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  color: #222;
+  transition: transform 1s ease;
+}
+.registrar-ejecucion:hover{
+  background-color: #999999;
+  transform: scale(1.15);
 }

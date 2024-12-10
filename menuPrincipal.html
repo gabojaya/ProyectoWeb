@@ -56,12 +56,10 @@
                 </div>
             </div>
 
-            <!-- Sección 2 -->
-            <!-- Sección 2: Metas Registradas -->
+            <!-- Sección 2: Metas -->
             <div class="page" id="page2" style="display:none;">
                 <h2 class="create-account">Metas Registradas</h2>
                 <div class="lista-Metas">
-                    <!-- Tabla para mostrar las metas con datos estáticos -->
                     <table class="tabla-metas">
                         <thead>
                             <tr>
@@ -74,7 +72,6 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <!-- Datos estáticos "quemados" en el HTML -->
                             <tr>
                                 <td>1</td>
                                 <td>Ejercicio diario todos los días</td>
@@ -183,13 +180,11 @@
                 <div class="container-form-2">
                     <h3>Registrar Habito</h3>
 
-                    <!-- Campo para el nombre del hábito -->
                     <div class="input-group">
                         <label for="nombre-habito">Nombre:</label>
                         <input type="text" id="nombre-habito" placeholder="Nombre del hábito" />
                     </div>
 
-                    <!-- Campo para la categoría -->
                     <div class="input-group">
                         <label for="categoria-habito">Categoría:</label>
                         <select id="categoria-habito">
@@ -200,7 +195,6 @@
                         </select>
                     </div>
 
-                    <!-- Campo para el tipo de medición -->
                     <div class="input-group">
                         <label for="tipo-medicion">Tipo de Medición:</label>
                         <select id="tipo-medicion">
@@ -209,7 +203,6 @@
                         </select>
                     </div>
 
-                    <!-- Campo para la frecuencia -->
                     <div class="input-group">
                         <label for="frecuencia-habito">Frecuencia:</label>
                         <select id="frecuencia-habito">
@@ -221,7 +214,6 @@
 
 
 
-                    <!-- Botones para guardar o cancelar -->
                     <div class="botones-meta">
                         <button class="button-user" id="guardar-habito-btn">Guardar Habito</button>
                         <button class="button-user" id="cerrar-habito-btn">Cancelar</button>
@@ -229,93 +221,41 @@
                 </div>
             </div>
 
-
-
-
-            <!-- Sección 3 -->
+            <!-- Sección 3: Registrar Ejecución-->
             <div class="page" id="page3" style="display:none;">
+
                 <h2 class="create-account">Registrar Ejecución</h2>
                 <div class="lista-Metas">
-                </div>
-                <div class="botones-perfil">
-                    <a href="#" class="button-user">Agregar Ejecución</a>
-                </div>
-            </div>
-
-            <!-- Sección 4 -->
-            <div class="page" id="page4" style="display:none;">
-                <h2 class="create-account">Estadísticas</h2>
-                <div class="lista-Metas" style="display: flex;">
-                    <div class="Metas" style="width: 50%;">
-                        <table class="tabla-metas">
-                            <thead>
-                                <tr>
-                                    <th>Meta</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td style="color: rgb(0, 0, 0);">Actividades diarias</td>
-                                </tr>
-                                <tr>
-                                    <td style="color: rgb(0, 0, 0);">Meta de ejercicio</td>
-                                </tr>
-                                <tr>
-                                    <td style="color: rgb(0, 0, 0);">Meta de ejercicio intenso</td>
-                                </tr>
-                                <tr>
-                                    <td style="color: rgb(0, 0, 0);">Trabajo intenso</td>
-                                </tr>
-                                <tr>
-                                    <td style="color: rgb(0, 0, 0);">Meta de oscio</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <canvas id="myChart" style="width: 50%;"></canvas>
-                </div>
-            </div>
-
-            <!-- Sección 5 -->
-            <div class="page" id="page5" style="display:none;">
-                <h2 class="create-account">Notificaciones</h2>
-                <div class="lista-Metas">
-                    <table class="tabla-metas">
+                    <table class="tabla-habitos">
                         <thead>
                             <tr>
-                                <th>Notificacion</th>
-                                <th>Marcar como leido</th>
+                                <th>Número</th>
+                                <th>Nombre del Hábito</th>
+                                <th>Categoría</th>
+                                <th>Frecuencia</th>
+                                <th>Estado</th>
+                                <th>Acciones</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td style="color: black;">Hora de correr</td>
+                                <td>1</td>
+                                <td>Beber agua</td>
+                                <td>Salud</td>
+                                <td>Diario</td>
+                                <td>En progreso</td>
                                 <td>
-                                    <button style="font-size:24px">Check<i class="fa fa-calendar-check-o"></i></button>
+                                    <button class="registrar-ejecucion">Registrar Ejecucion</button>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="color: black;">Hora de comer</td>
+                                <td>2</td>
+                                <td>Ejercicio</td>
+                                <td>Bienestar</td>
+                                <td>Semanal</td>
+                                <td>En progreso</td>
                                 <td>
-                                    <button style="font-size:24px">Check<i class="fa fa-calendar-check-o"></i></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="color: black;">Hora de ir al GYM</td>
-                                <td>
-                                    <button style="font-size:24px">Check<i class="fa fa-calendar-check-o"></i></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="color: black;">Hora de dormir</td>
-                                <td>
-                                    <button style="font-size:24px">Check<i class="fa fa-calendar-check-o"></i></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="color: black;">Hora de tomar agua</td>
-                                <td>
-                                    <button style="font-size:24px">Check<i class="fa fa-calendar-check-o"></i></button>
+                                    <button class="registrar-ejecucion">Registrar Ejecucion</button>
                                 </td>
                             </tr>
                         </tbody>
@@ -323,6 +263,91 @@
                 </div>
             </div>
         </div>
+        
+
+
+
+        <!-- Sección 4 -->
+        <div class="page" id="page4" style="display:none;">
+            <h2 class="create-account">Estadísticas</h2>
+            <div class="lista-Metas" style="display: flex;">
+                <div class="Metas" style="width: 50%;">
+                    <table class="tabla-metas">
+                        <thead>
+                            <tr>
+                                <th>Meta</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="color: rgb(0, 0, 0);">Actividades diarias</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(0, 0, 0);">Meta de ejercicio</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(0, 0, 0);">Meta de ejercicio intenso</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(0, 0, 0);">Trabajo intenso</td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(0, 0, 0);">Meta de oscio</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <canvas id="myChart" style="width: 50%;"></canvas>
+            </div>
+        </div>
+
+        <!-- Sección 5 -->
+        <div class="page" id="page5" style="display:none;">
+            <h2 class="create-account">Notificaciones</h2>
+            <div class="lista-Metas">
+                <table class="tabla-metas">
+                    <thead>
+                        <tr>
+                            <th>Notificacion</th>
+                            <th>Marcar como leido</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="color: black;">Hora de correr</td>
+                            <td>
+                                <button style="font-size:24px">Check<i class="fa fa-calendar-check-o"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="color: black;">Hora de comer</td>
+                            <td>
+                                <button style="font-size:24px">Check<i class="fa fa-calendar-check-o"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="color: black;">Hora de ir al GYM</td>
+                            <td>
+                                <button style="font-size:24px">Check<i class="fa fa-calendar-check-o"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="color: black;">Hora de dormir</td>
+                            <td>
+                                <button style="font-size:24px">Check<i class="fa fa-calendar-check-o"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="color: black;">Hora de tomar agua</td>
+                            <td>
+                                <button style="font-size:24px">Check<i class="fa fa-calendar-check-o"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
     </div>
 
     <script src="scripts/menu.js"></script>
