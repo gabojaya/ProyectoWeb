@@ -312,3 +312,19 @@ h2.create-account {
   transform: scale(1.15);
 }
 
+.input-group select {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 20px; /* Bordes redondeados */
+  border: 1px solid #ccc; /* Color del borde */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  width: 40vw; /* Ajuste al tamaño de los inputs */
+  background-color: #fff; /* Fondo blanco */
+  cursor: pointer; /* Cambiar el cursor al pasar sobre el elemento */
+}
+
+.input-group select:focus {
+  border-color: #007BFF; /* Color del borde al enfocar */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Resaltar la sombra */
+  outline: none; /* Eliminar el borde predeterminado */
+}
