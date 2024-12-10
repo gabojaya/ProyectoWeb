@@ -127,6 +127,77 @@
                 </div>
             </div>
 
+            <!-- Pantalla para Hábitos -->
+            <div class="screenOverlay" id="screenOverlayHabitos" style="display:none;">
+                <div class="container-form-2">
+                    <h3>Registrar Hábitos</h3>
+                    <div class="lista-habitos">
+                        <table class="tabla-habitos">
+                            <thead>
+                                <tr>
+                                    <th>Número</th>
+                                    <th>Nombre del Hábito</th>
+                                    <th>Categoría</th>
+                                    <th>Frecuencia</th>
+                                    <th>Estado</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Beber agua</td>
+                                    <td>Salud</td>
+                                    <td>Diario</td>
+                                    <td>En progreso</td>
+                                    <td>
+                                        <button class="editar-habito">Editar</button>
+                                        <button class="eliminar-habito">Eliminar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Ejercicio</td>
+                                    <td>Bienestar</td>
+                                    <td>Semanal</td>
+                                    <td>En progreso</td>
+                                    <td>
+                                        <button class="editar-habito">Editar</button>
+                                        <button class="eliminar-habito">Eliminar</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="botones-habitos">
+                        <button class="button-user" id="agregar-habito-btn">Agregar Habito</button>
+                        <button class="button-user" id="volver-a-metas-btn">Volver a la lista de metas</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pantalla Oculta para el Formulario de Habitos -->
+            <div class="screenOverlay" id="screenOverlayRegistroHabitos" style="display:none;">
+                <div class="container-form-2">
+                    <h3>Registrar Habito</h3>
+                    <div class="input-group">
+                        <label for="descripcion-meta">Descripción:</label>
+                        <input type="text" id="descripcion-habito" />
+                    </div>
+                    <div class="input-group">
+                        <label for="fecha-inicio">Fecha de Inicio:</label>
+                        <input type="date" id="fecha-inicio" />
+                    </div>
+                    <div class="input-group">
+                        <label for="fecha-fin">Fecha de Fin:</label>
+                        <input type="date" id="fecha-fin" />
+                    </div>
+                    <div class="botones-meta">
+                        <button class="button-user" id="guardar-habito-btn">Guardar Habito</button>
+                        <button class="button-user" id="cerrar-habito-btn">Cancelar</button>
+                    </div>
+                </div>
+            </div>
 
 
 
@@ -153,19 +224,19 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td style="color: black;">Actividades diarias</td>
+                                    <td style="color: rgb(0, 0, 0);">Actividades diarias</td>
                                 </tr>
                                 <tr>
-                                    <td style="color: black;">Meta de ejercicio</td>
+                                    <td style="color: rgb(0, 0, 0);">Meta de ejercicio</td>
                                 </tr>
                                 <tr>
-                                    <td style="color: black;">Meta de ejercicio intenso</td>
+                                    <td style="color: rgb(0, 0, 0);">Meta de ejercicio intenso</td>
                                 </tr>
                                 <tr>
-                                    <td style="color: black;">Trabajo intenso</td>
+                                    <td style="color: rgb(0, 0, 0);">Trabajo intenso</td>
                                 </tr>
                                 <tr>
-                                    <td style="color: black;">Meta de oscio</td>
+                                    <td style="color: rgb(0, 0, 0);">Meta de oscio</td>
                                 </tr>
                             </tbody>
                         </table>

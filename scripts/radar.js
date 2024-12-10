@@ -2,9 +2,9 @@
 const ctx = document.getElementById('myChart');
 //se crean los datos para el grafico
 const data = {
-    labels: ['Comer','Tomar agua','Dormir','Jugar','Trabajr','Gym','Correr'],//aquie se cargaran los habitos de la meta
+    labels: ['Comer','Tomar agua','Dormir','Jugar','Trabajar','Gym','Correr'],//aquie se cargaran los habitos de la meta
     datasets: [{
-        label:'prueba',
+        label:'General',
         data: [65, 59, 90, 81, 56, 55, 40],//aqui las ejecuciones para el grafico
         fill: true,
         backgroundColor: 'rgba(255, 99, 132, 0.2)',//estilo del grafico

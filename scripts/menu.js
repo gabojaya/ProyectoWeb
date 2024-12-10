@@ -30,8 +30,21 @@ function showPage(pageNumber) {
 
 function setupMetaScreen() {
     const addMetaBtn = document.getElementById('add-meta-btn');
+    const editarMetaBtns = document.querySelectorAll('.editar-meta');
     const screenOverlay = document.getElementById('screenOverlay');
     const cerrarBtn = document.getElementById('cerrar-btn');
+    const continuarBtn = document.getElementById('continuar-btn');
+    const screenOverlayHabitos = document.getElementById('screenOverlayHabitos');
+
+    const addHabitoBtn = document.getElementById('agregar-habito-btn');
+    const editarHabitoBtn = document.querySelectorAll('.editar-habito');
+    const screenOverlayRegistroHabitos = document.getElementById('screenOverlayRegistroHabitos');
+
+    const guardarRegistroHabitoBtn = document.getElementById('guardar-habito-btn');
+    const cerrarHabitoBtn = document.getElementById('cerrar-habito-btn');
+    const volverAMetasBtn = document.getElementById('volver-a-metas-btn');
+
+    
 
     // Funcionalidad para mostrar la pantalla modal al hacer clic en "Agregar Meta"
     addMetaBtn.addEventListener('click', function() {
@@ -44,11 +57,52 @@ function setupMetaScreen() {
     });
 
     // Funcionalidad para manejar los botones de "Editar Meta"
-    const editarMetaBtns = document.querySelectorAll('.editar-meta');
     editarMetaBtns.forEach(function(btn) {
         btn.addEventListener('click', function() {
             screenOverlay.style.display = 'flex'; // Mostrar la pantalla modal
             // Opcional: Aquí puedes agregar lógica para cargar datos dinámicos
         });
     });
+
+    continuarBtn.addEventListener('click', function() {
+        screenOverlayHabitos.style.display = 'flex'; // Mostrar la pantalla modal
+    });
+
+    addHabitoBtn.addEventListener('click', function() {
+        screenOverlayRegistroHabitos.style.display = 'flex'; // Mostrar la pantalla modal
+    });
+
+    guardarRegistroHabitoBtn.addEventListener('click', function () {
+        // Ocultar el modal de registro de hábitos
+        screenOverlayRegistroHabitos.style.display = 'none';
+
+
+    });
+    
+    cerrarHabitoBtn.addEventListener('click', function () {
+        // Ocultar el modal de registro de hábitos
+        screenOverlayRegistroHabitos.style.display = 'none';
+
+    });
+
+    volverAMetasBtn.addEventListener('click', function () {
+        // Ocultar el modal de registro de hábitos
+        screenOverlayHabitos.style.display = 'none';
+        screenOverlay.style.display = 'none';
+    });
+    
+
+    editarHabitoBtn.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            screenOverlayRegistroHabitos.style.display = 'flex'; // Mostrar la pantalla modal
+            // Opcional: Aquí puedes agregar lógica para cargar datos dinámicos
+        });
+    });
+
+
+
+    
+
+
+
 }
